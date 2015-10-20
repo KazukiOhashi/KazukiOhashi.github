@@ -4,5 +4,6 @@
   "start_url": "/",
   "display": "standalone",
   "gcm_sender_id": "716585436153",
-  "gcm_user_visible_only": true
+  "gcm_user_visible_only": true,
+  "safari_web_id: "web.onesignal.auto.05605657-a1ec-46ab-8d61-441038586900"
 }
