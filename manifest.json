@@ -1,0 +1,8 @@
+{
+  "name": "cyta local",
+  "short_name": "cyta local",
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "716585436153",
+  "gcm_user_visible_only": true
+}

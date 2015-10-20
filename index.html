@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <link rel="manifest" href="/manifest.json">
+
+    <script>
+        var OneSignal = OneSignal || [];
+
+        OneSignal.push(["init", {path: "/", appId: "0178f292-764e-11e5-bb4a-a3712f83d985", autoRegister: true}]);
+    </script>
+</head>
+<body>
+
+
+<a href="#" id="registerForPushLink">Subscribe to Notifications</a>
+<script>
+    OneSignal.push(function() {
+        function registerForPush(event) {
+            OneSignal.push(["registerForPushNotifications"], {modalPrompt: true});
+            event.preventDefault();
+        }
+        document.getElementById("registerForPushLink").addEventListener('click', registerForPush, false);
+
+    });
+</script>
+</body>
+</html>
