@@ -20,15 +20,15 @@
 <a href="#" id="registerForDevelop">Subscribe to Develp</a>
 <script>
     OneSignal.push(function() {
-        function registerForPush(event) {
-            OneSignal.push(["registerForPushNotifications"], {modalPrompt: true});
-            event.preventDefault();
-        }
+//        function registerForPush(event) {
+//            OneSignal.push(["registerForPushNotifications"], {modalPrompt: true});
+//            event.preventDefault();
+//        }
 	    function registerForDevelopTag(event) {
 		    OneSignal.push(["sendTag", "develop", "true"]);
             event.preventDefault();
         }
-        document.getElementById("registerForPushLink").addEventListener('click', registerForPush, false);
+//        document.getElementById("registerForPushLink").addEventListener('click', registerForPush, false);
         document.getElementById("registerForDevelop").addEventListener('click', registerForDevelopTag, false);
 
     });
