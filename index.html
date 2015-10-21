@@ -23,7 +23,11 @@
             OneSignal.push(["registerForPushNotifications"], {modalPrompt: true});
             event.preventDefault();
         }
+	function registerForDevelop(event) {
+		OneSignal.push(["sendTag", "develop", "true"]);
+	}
         document.getElementById("registerForPushLink").addEventListener('click', registerForPush, false);
+        document.getElementById("registerForDevelop").addEventListener('click', registerForDevelop, false);
 
     });
 </script>
