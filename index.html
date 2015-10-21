@@ -24,11 +24,12 @@
             OneSignal.push(["registerForPushNotifications"], {modalPrompt: true});
             event.preventDefault();
         }
-	function registerForDevelop(event) {
-		OneSignal.push(["sendTag", "develop", "true"]);
-	}
+	    function registerForDevelopTag(event) {
+		    OneSignal.push(["sendTag", "develop", "true"]);
+            event.preventDefault();
+        }
         document.getElementById("registerForPushLink").addEventListener('click', registerForPush, false);
-        document.getElementById("registerForDevelop").addEventListener('click', registerForDevelop, false);
+        document.getElementById("registerForDevelop").addEventListener('click', registerForDevelopTag, false);
 
     });
 </script>
